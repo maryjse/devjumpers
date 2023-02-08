@@ -136,3 +136,26 @@ Hago los cambios pertinentes en el archivo 1.txt de mi rama main:
 Hola
 Adios
 Una vez solucionado, ya puedo agregar y realizar mi commit.
+
+BORRAR RAMA:
+
+Yo eliminé la rama de manera forzada, ya que la agregué a mi repositorio, al intentar hacerlo con:
+```bash
+$ git branch -d v0.2
+```
+Me salió este mensaje:
+```bash
+warning: not deleting branch 'v0.2' that is not yet merged to
+         'refs/remotes/origin/v0.2', even though it is merged to HEAD.
+error: The branch 'v0.2' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D v0.2'.
+```
+Así que la eliminé de la forma:
+```bash
+$ git branch -D v0.2
+```
+Y al hacer:
+```bash
+$ git branch
+```
+Sólo puedo visualizar la rama main.
