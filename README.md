@@ -159,3 +159,24 @@ Y al hacer:
 $ git branch
 ```
 Sólo puedo visualizar la rama main.
+
+LISTA DE CAMBIOS:
+
+Con en comando:
+```bash
+$ git log --oneline --decorate --all --graph
+```
+Puedo visualizar todos los commits realizados de manera más detallados, los cuales son:
+```bash
+* 7d9f66c (HEAD -> main, origin/main, origin/HEAD) Rama v0.2 eliminada
+*   5ac9f2f Conflicto Arreglado
+|\
+| * 7dd7918 Agregando ADIOS a 1.txt desde v0.2
+* | a17f7a7 Agregando HOLA a 1.txt desde main
+|/
+* 2b41d24 (origin/v0.2) Creacion de fichero 2.txt en rama v0.2
+* df0f59c Creacion de archivo 1.txt desde main
+* 432b0f9 Ignorar Archivos
+* 131404d Commit inicial
+* cf52fa4 Initial commit
+```
