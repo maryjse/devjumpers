@@ -44,3 +44,40 @@ $ git add .
 $ git commit -m "Ignorar Archivos"
 $ git push
 ```
+
+AÑADIR FICHERO 1.TXT:
+
+Posicionandome en la rama main, utilicé el comando:
+```bash
+$ touch 1.txt
+```
+
+CREACIÓN DE RAMA v0.2:
+
+Para crear la rama utilicé el comando:
+```bash
+$ git branch v0.2
+```
+Luego, en la rama main creé el archivo 2.txt de la manera, además vi si se había añadido la nueva rama correctamente:
+```bash
+$ touch 2.txt
+$ git branch
+```
+Me posicioné en la rama v0.2 con:
+```bash
+$ git checkout v0.2
+```
+y añadí mi archivo txt a la misma, hice el commit y el push al repositorio remoto de la siguiente manera:
+```bash
+$ git add 2.txt
+$ git commit -m "Creacion de fichero 2.txt en rama v0.2"
+$ git push --set-upstream origin v0.2
+```
+
+MERGE DIRECTO:
+
+Hice el merge de mi archivo 2.txt a la rama main, primero me posicioné en la rama main y después realicé el merge, de la siguiente manera:
+```bash
+$ git checkout main
+$ git merge v0.2
+```
