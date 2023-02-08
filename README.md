@@ -20,3 +20,27 @@ $ git commit -m "Commit inicial"
 $ git push 
 ```
 (Acá hice mi primer push)
+
+IGNORAR ARCHIVOS:
+
+El comando .gitignore me permite clasificar los archivos o carpetas los cuales quiero ignorar en mi repositorio.
+En el repositorio local creo un archivo .txt y una carpeta de la manera:
+```bash
+$ touch privado.txt
+$ mkdir privada
+```
+Luego, para visualizar que se crearon correctamente veo la lista de mi carpeta:
+```bash
+$ ls
+```
+Para ignorar la carpeta y el archivo creé utilicé el archivo .gitignore, el cual lo creé con el comando:
+```bash
+$ touch .gitignore
+```
+Y dentro del archivo ingresé el nombre de los elementos a ignorar.
+Luego, lo añadí e hice el push:
+```bash
+$ git add .
+$ git commit -m "Ignorar Archivos"
+$ git push
+```
