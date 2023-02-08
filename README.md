@@ -190,3 +190,5 @@ TABLA DE COMPAÑEROS:
 | Franco Formigo |[francobenjaminformigo](https://github.com/francobenjaminformigo)|
 | Damian Coronel |[Damsh-bit](https://github.com/Damsh-bit)|
 | Camila Rios|[camilarios01](https://github.com/camilarios01)|
+
+Colaborador: Lucas Emmanuel Gimenez.
