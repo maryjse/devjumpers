@@ -180,3 +180,13 @@ Puedo visualizar todos los commits realizados de manera más detallados, los cua
 * 131404d Commit inicial
 * cf52fa4 Initial commit
 ```
+
+TABLA DE COMPAÑEROS:
+
+| Command | Description |
+| --- | --- |
+| Camila Calegari |[camilacalegari](https://github.com/camilacalegari)|
+| Alejo Paiva |[BLUHD823](https://github.com/BLUHD823)|
+| Franco Formigo |[francobenjaminformigo](https://github.com/francobenjaminformigo)|
+| Damian Coronel |[Damsh-bit](https://github.com/Damsh-bit)|
+| Camila Rios|[camilarios01](https://github.com/camilarios01)|
