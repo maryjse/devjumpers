@@ -81,3 +81,58 @@ Hice el merge de mi archivo 2.txt a la rama main, primero me posicioné en la ra
 $ git checkout main
 $ git merge v0.2
 ```
+
+MERGE CON CONFLICTO:
+
+En la rama main agregué "Hola" al archivo 1.txt de la manera:
+```bash
+$ echo "Hola" > 1.txt
+$ git add 1.txt
+$ git commit -m "Agregando HOLA a 1.txt desde main"
+```
+Luego, me posicioné en la rama v0.2 y le agregué al archivo 1.txt "Adiós":
+```bash
+$ git checkout v0.2
+$ echo "Adios" > 1.txt
+$ git add 1.txt
+$ git commit -m "Agregando ADIOS a 1.txt desde v0.2"
+```
+Volví a la rama main e intenté realizar el merge, pero me encuentro con un conflicto.
+```bash
+$ git checkout main
+$ git merge v0.2
+```
+Git me arrojó este mensaje:
+```bash
+Auto-merging 1.txt
+CONFLICT (add/add): Merge conflict in 1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+LISTADO DE RAMAS:
+
+La funcion --merged me muestra las ramas que estan ya fusionadas, y --no-merged las que no estan, por lo tanto no puedo eliminarlas. En mi caso tengo la rama main fusionada pero v0.2 no lo esta, y al aplicar el comando me sale de esta manera:
+```bash
+Usuario@MACHINE-K MINGW64 ~/Desktop/Github/devjumpers (main|MERGING)
+$ git branch --merged
+* main
+```
+```bash
+Usuario@MACHINE-K MINGW64 ~/Desktop/Github/devjumpers (main|MERGING)
+$ git branch --no-merged
+  v0.2
+```
+ARRGLAR CONFLICTO:
+
+Arreglo el conflicto manualmente, ingresando a mi archivo 1.txt y modificando los cambios que quiera arreglar, en mi caso me sale de esta manera:
+
+<<<<<<< HEAD
+Hola
+=======
+Adios
+>>>>>>> v0.2
+
+Hago los cambios pertinentes en el archivo 1.txt de mi rama main:
+Hola
+Adios
+Una vez solucionado, ya puedo agregar y realizar mi commit.
